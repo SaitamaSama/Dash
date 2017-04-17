@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="Resources/Stylesheets/Root.css" rel="stylesheet">
+    <link href="Resources/Stylesheets/LockScreen.css" rel="stylesheet">
+    <link href="Resources/Stylesheets/PIN.css" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <title>Dashboard Template</title>
+</head>
+<body>
+<section class="lock-screen">
+    <img id="lock-screen-background" data-fit="false" src="" />
+    <section class="notifications" id="lock-screen-notifications">
+        <section data-notification='{"title": "Notification #1", "description": "Notification description goes here"}' class="notification"></section>
+        <section data-notification='{"title": "Notification #2", "description": "Notification description goes here"}' class="notification"></section>
+    </section>
+    <span class="unlock"></span>
+</section>
+<section class="pin-screen">
+    <section class="container">
+        <label for="pin" class="title">Enter your PIN to unlock</label>
+        <input class="pin" maxlength="4" id="pin" type="password" name="pin">
+        <button class="submit" id="pin-submit">Done</button>
+    </section>
+</section>
+<main class="main-content">
+    <section class="overlay"></section>
+    <section class="content">
+        <section class="container">
+            <h1>Overviews</h1>
+            <section class="row flexed">
+                <section class="intro-card" style="background: #6fc5a3;">
+                    <span class="feature-int">56%</span>
+                    <span class="description">increase in visitors count</span>
+                </section>
+                <section class="intro-card" style="background: #497ada;">
+                    <span class="feature-int">10%</span>
+                    <span class="description">decrease in DDoS attacks</span>
+                </section>
+                <section class="intro-card" style="background: #da7a49;">
+                    <span class="feature-int">30%</span>
+                    <span class="description">decrease in page load time</span>
+                </section>
+            </section>
+        </section>
+        <div class="section-break"></div>
+        <section class="container">
+            <h1>Charts</h1>
+            <h2 class="bottomed">Visitors</h2>
+            <section id="chart-1"></section>
+            <h2 class="bottomed">DDoS Attacks</h2>
+            <section id="chart-2"></section>
+        </section>
+        <div class="section-break"></div>
+        <section class="container">
+            <h1>Tasks</h1>
+            <section class="task-container">
+                <section class="task">
+                    <section class="task-check">
+                        <label class="label--checkbox">
+                            <input type="checkbox" class="checkbox">
+                        </label>
+                    </section>
+                    <section class="task-content">
+                        Lorem ipsum dolor amet
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+</main>
+
+<script src="Resources/Scripts/Require.js"></script>
+<script src="Resources/Scripts/Clock.js"></script>
+<script src="Resources/Scripts/Notification.js"></script>
+<script src="Resources/Scripts/LockScreen.js"></script>
+<script src="Resources/Scripts/Charter.js"></script>
+</body>
+</html>
